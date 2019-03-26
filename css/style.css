@@ -1,0 +1,218 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "light";
+    src: url(../fonts/TitilliumWeb-ExtraLightItalic.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "title";
+    src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*
+==========================================
+                HEADER
+==========================================
+*/
+
+.menu {
+    background-image: url(../img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.textBlock {
+    width: 40%;
+    position: relative;
+    display: inline-grid;
+    text-align: justify;
+    color: #fff;
+}
+
+.textPlace {
+    display: inline-grid;
+    text-align: -webkit-right;
+    position: relative;
+    width: 100%;
+    right: 7%;
+    height: auto;
+    padding-top: 15%;
+}
+
+.topMenu {
+    padding-top: 1%;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+}
+
+.buttonPlace {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 30vh;
+    border-radius: 5%;
+    ;
+    height: 7vh;
+    font-family: cursive;
+}
+
+i {
+    position: relative;
+    color: #fff;
+    font-size: 8vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: title;
+}
+
+li {
+    display: inline;
+    position: relative;
+    margin-right: 3%;
+}
+
+h1 {
+    font-family: title;
+    font-style: italic;
+}
+
+p {
+    font-family: light;
+    height: auto;
+}
+
+/*
+==========================================
+            Main
+==========================================
+*/
+.blockText {
+    position: relative;
+    text-align: center;
+    display: inline-grid;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.blockMySkills {
+    background-image: url(/img/dairy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.myskills {
+    position: relative;
+    display: inline-grid;
+    justify-content: center;
+    width: 100vh;
+}
+
+.myskills p {
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.myskills p::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    top: 0;
+    bottom: 0;
+    opacity: 0.3;
+    border-bottom: 1vh solid black;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    border-bottom: 1vh solid black;
+}
+
+.transitionBlock {
+    position: relative;
+    background-color: #3e3e3e;
+    height: 35vh;
+    color: #fff;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infoblock {
+    height: 20vh;
+    position: relative;
+    display: inline-grid;
+}
+
+.fotoblockOurWorkProcess {
+    background-image: url(/img/workproces.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 5%;
+    Height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.textblockOurWorkProcess {
+    position: relative;
+    display: inline-grid;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
