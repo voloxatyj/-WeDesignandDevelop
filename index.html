@@ -5,10 +5,12 @@
     <title>WeDesignandDevelop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="menu">
+    <div class="header">
         <div class="topMenu">
             <i class="fab fa-think-peaks"></i>
             <ul>
@@ -41,29 +43,46 @@
                 </div>
             </div>
             <div class="blockMySkills">
-                <div class="myskills">
-                    <h1>Professional Skills</h1>
-                    <p class="skills">UI/UX DESIGN 75%</p>
-                    <p class="skills">WEB DEVELOPMENT 90%</p>
-                    <p class="skills">MARKETING 65%</p>
+                <h1>Professional Skills</h1>
+                <div class="skillBox">
+                    <p>UI/UX DESIGN 75%</p>
+                    <div class="skill">
+                        <div class="skillLevel UI"></div>
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <p>WEB DEVELOPMENT 90%</p>
+                    <div class="skill">
+                        <div class="skillLevel WEB"></div>
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <p>MARKETING 65%</p>
+                    <div class="skill">
+                        <div class="skillLevel MARKETING"></div>
+                    </div>
                 </div>
             </div>
             <div class="transitionBlock">
                 <i class="fas fa-briefcase"></i>
                 <div class="infoblock">
-                <p>548</p><p>PROJECT COMPLETED</p>
+                    <p>548</p>
+                    <p>PROJECT COMPLETED</p>
                 </div>
                 <i class="fas fa-clock"></i>
                 <div class="infoblock">
-                <p>1465</p><p>WORKING HOURS</p>
+                    <p>1465</p>
+                    <p>WORKING HOURS</p>
                 </div>
                 <i class="fas fa-street-view"></i>
                 <div class="infoblock">
-                <p>612</p><p>POSITIVE FEEDBACKS</p>
+                    <p>612</p>
+                    <p>POSITIVE FEEDBACKS</p>
                 </div>
                 <i class="fas fa-hand-spock"></i>
                 <div class="infoblock">
-                <p>735</p><p>HAPPY CLIENTS</p>
+                    <p>735</p>
+                    <p>HAPPY CLIENTS</p>
                 </div>
             </div>
         </div>
@@ -73,9 +92,82 @@
                 <p>Was years it seasons was there farm he in in them together over that, third sixth gathered female creeping bearing years.
                 </p>
             </div>
-            <div class="fotoblockOurWorkProcess">
-
+            <div class="fotoblockOurWorkProcess"></div>
+            <div class="iconsBlock">
+                <div class="iconsList">
+                    <i class="fas fa-gem">
+                        <h1>UI/UX DESIGN</h1>
+                        <p>Be set fourth land god darkness make it wherein own</p>
+                    </i>
+                    <i class="fas fa-plane-departure">
+                        <h1>SEO/MARKETING</h1>
+                        <p>Give won't after land fillcreeping meat you, may</p>
+                    </i>
+                    <i class="fab fa-vuejs">
+                        <h1>WEB DEVELOPMENT</h1>
+                        <p>A she'd them bring void moving third she'd kind fill</p>
+                    </i>
+                    <i class="fab fa-jedi-order">
+                        <h1>PHOTOGRAPHY</h1>
+                        <p>Creepeth one seas cattle grass give moving saw give</p>
+                    </i>
+                    <i class="fas fa-mobile-alt">
+                        <h1>APP/MOBILE</h1>
+                        <p>Dominion man second spirit he, earth they're creeping</p>
+                    </i>
+                    <i class="fas fa-magic">
+                        <h1>GRAPHIC DESIGN</h1>
+                        <p>Open, great whales air rule for, fourth life whales</p>
+                    </i>
+                    <i class="fas fa-gamepad">
+                        <h1>GAME DESIGN</h1>
+                        <p>Morning his saying moveth it multiply appear life be</p>
+                    </i>
+                    <i class="fas fa-palette">
+                        <h1>ILLUSTRATIONS</h1>
+                        <p>Whales likeness hath, main kind for them air two won't</p>
+                    </i>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <h1>Need A Project?</h1>
+        <p>Let us know what you're looking for in an agency. We'll take a look and sww if this could be the start of something beatiful.</p>
+        <div class="blockNeedaProject">
+            <div class="blockpersonalInfo">
+                <div class="mat-div">
+                    <label for="first-name" class="mat-label">Your Name</label>
+                    <input type="text" class="mat-input" id="first-name">
+                </div>
+
+                <div class="mat-div">
+                    <label for="first-name" class="mat-label">Your Email</label>
+                    <input type="text" class="mat-input" id="last-name">
+                </div>
+            </div>
+            <div class="mat-div">
+                <label for="address" class="mat-label">Your Title</label>
+                <input type="text" class="mat-input" id="address">
+            </div>
+            <div class="mat-div">
+                <label for="address" class="mat-label">Your Comment</label>
+                <input type="text" class="mat-input" id="address">
+            </div>
+        </div>
+        <div class="footButton">
+            <button>SEND MESSAGE</button>
+        </div>
+        <script>
+            $(".mat-input").focus(function() {
+                $(this).parent().addClass("is-active is-completed");
+            });
+
+            $(".mat-input").focusout(function() {
+                if ($(this).val() === "")
+                    $(this).parent().removeClass("is-completed");
+                $(this).parent().removeClass("is-active");
+            })
+        </script>
     </div>
 </body></html>
